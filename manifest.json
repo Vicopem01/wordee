@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Word Helper",
+  "version": "1.0",
+  "description": "Get instant definitions, synonyms, and examples for words on any webpage",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }]
+}
